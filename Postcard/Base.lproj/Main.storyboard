@@ -66,7 +66,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="43" y="92" width="315" height="110"/>
+                                    <rect key="frame" x="43" y="92" width="315" height="122"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Addressee" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUL-8A-SRG">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="48" y="227" width="202" height="37"/>
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AlbertEinsteinStamp.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="opo-W8-iav">
@@ -110,6 +119,7 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="mY0-ES-ZAM"/>
+                                <exclude reference="RUL-8A-SRG"/>
                                 <exclude reference="opo-W8-iav"/>
                                 <exclude reference="fA2-ix-yC6"/>
                                 <exclude reference="bNF-QX-FOI"/>
@@ -119,6 +129,7 @@
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="mY0-ES-ZAM"/>
+                                <include reference="RUL-8A-SRG"/>
                                 <include reference="opo-W8-iav"/>
                                 <include reference="fA2-ix-yC6"/>
                                 <include reference="bNF-QX-FOI"/>
@@ -127,6 +138,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="addresseeLabel" destination="RUL-8A-SRG" id="MQm-wg-m4f"/>
                         <outlet property="enterMessageTextField" destination="bNF-QX-FOI" id="S0X-DF-tfN"/>
                         <outlet property="enterNameTextField" destination="fA2-ix-yC6" id="zEx-ce-lIu"/>
                         <outlet property="mailButton" destination="1Qq-iY-NrY" id="Z69-q0-Mfq"/>
